@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="kullanıcı.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            text-align: left;
+        }
+        .auto-style4 {
+            width: 100%;
+        }
+        .auto-style5 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: darkorange;">
+            <asp:Image ID="Image1" runat="server" Height="148px" ImageUrl="~/BannerPhoto/images.jpg" Width="699px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+        <div>
+            <div style="margin-left: 300px; width: 700px; height: auto;">
+
+                <div style="width: 200px; float: left; height: auto; background-color: darkorange; margin-left: 0px;">
+                    <div class="auto-style3">
+                        <table class="auto-style4">
+                            <tr>
+                                <td class="auto-style5"><strong>MENÜLER</strong></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td><a href="Kategoriler.aspx"> Kategoriler</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="yemekler.aspx"> Yemekler</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Yorumlar.aspx"> Yorumlar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Mesajlar.aspx"> Mesajlar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="GununYemegiAdmin.aspx"> Günün Yemeği</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="Öneriler.aspx"> Öneriler</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="HakkımızdaAdmin.aspx"> Hakkımızda</a></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <br />
+                    </div>
+                </div>
+                <div style="width: 450px; float: left; height: auto; background-color: darkorange; margin-left: 50px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            &nbsp;
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
